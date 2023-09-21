@@ -5,7 +5,6 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route part="Aps" element={<Aps />} />
       </Routes>
     </Router>
   );
