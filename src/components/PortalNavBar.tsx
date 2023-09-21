@@ -3,14 +3,6 @@ import profilePicture from "../img/me.jpg"
 
 
 export const PortalNavbar = ()  => {
-
-    // interface User {
-    //     fullName : string ;
-    // }
-
-    // const name : User{
-    //     fullName : "Lebele Thabang";
-    // }
     return (
     <div className="navbar">
         <div className="navbar__container">
