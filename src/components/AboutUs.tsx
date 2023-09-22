@@ -14,8 +14,9 @@ const AboutUs = () => {
                    hic omnis!</p>
           </div>
   <div className="AboutUs-body">
-    <div className="Img-1">
-      <img src="" /></div>
+    <div className="Img">
+      <img src="" />
+      </div>
       <div className="Mission">
           <h3>Our Mission</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -36,7 +37,9 @@ const AboutUs = () => {
   
           </p>
       </div>
+      <div className="Img">
       <img src="" alt=""/>
+  </div>
   </div>
   
   
