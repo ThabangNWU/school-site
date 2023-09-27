@@ -1,1 +1,37 @@
 @import url('./css/AboutUs.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url(../src/css/portalNavbar.css);
+@import url(../src/css/contactdashboard.css);
+@import url(../src/css/users.css);
+
+
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul,
+ol{
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+body {
+  font-family: 'Inter', sans-serif;;
+  margin: 0;
+  overflow-x:hidden;
+}
