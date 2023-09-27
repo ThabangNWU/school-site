@@ -1,9 +1,27 @@
-import React from 'react'
+import React from "react";
 
 const About = () => {
-  return (
-    <div>About</div>
-  )
-}
+  const handleAboutUs = () => {};
 
-export default About
+  const handleOurMission = () => {};
+
+  const handleOurVision = () => {};
+
+  return (
+    <div>
+      <p>About us</p>
+      <input type="text"></input>
+      <button onClick={() => handleAboutUs()}>Save</button>
+
+      <p>Our Mission</p>
+      <input type="text"></input>
+      <button onClick={() => handleOurMission()}>Save</button>
+
+      <p>Our Vision</p>
+      <input type="text"></input>
+      <button onClick={() => handleOurVision()}>Save</button>
+    </div>
+  );
+};
+
+export default About;

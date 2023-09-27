@@ -7,6 +7,7 @@ import Blog from "./components/Blog";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Gallery from "./components/Gallery";
+import Users from "./components/Users";
 
 export const MyContext = createContext({});
 
@@ -26,6 +27,7 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="gallery" element={<Gallery />} />
+            <Route path="users" element={<Users />} />
           </Route>
         </Routes>
       </Router>
