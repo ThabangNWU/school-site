@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { createContext, useState } from "react";
 import Home from "./components/Home";
+import { Contact } from "./components/Contact";
+import { Users } from "./components/Users";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 import Blog from "./components/Blog";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import About from "./components/About";;
 import Gallery from "./components/Gallery";
-import Users from "./components/Users";
 
 export const MyContext = createContext({});
 
