@@ -1,9 +1,8 @@
 import {AiOutlineMenu,AiOutlineDown} from 'react-icons/ai';
-import profilePicture from "../Image/me.jpg"
+import profilePicture from "../assets/me.jpg"
 
 
 export const PortalNavbar = ()  => {
-
     return (
     <div className="navbar">
         <div className="navbar__container">
