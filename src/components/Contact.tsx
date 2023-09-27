@@ -1,10 +1,7 @@
-import { PortalNavbar } from "./PortalNavBar"
-
 export const Contact = () => {
 
     return (
         <>
-           <PortalNavbar/>
         <div className="dashboard-contact">
             <div className="dashboard-contact-container">
                 <h3>CONTACT</h3>
