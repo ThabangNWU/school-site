@@ -4,15 +4,15 @@ import { signInWithEmailAndPassword, getAuth } from "firebase/auth";
 import { initializeApp } from "firebase/app";
 import { firebaseConfig } from "../firebaseConfig";
 import { getFirestore, getDoc, doc } from "firebase/firestore";
-import { useContext } from 'react';
-import { MyContext } from '../App';
+import { useContext } from "react";
+import { MyContext } from "../App";
 
 interface LoginFormProps {}
 
 const Login: React.FC<LoginFormProps> = () => {
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
-  const auth = getAuth()
+  const auth = getAuth();
   const navigate = useNavigate();
   const [userEmail, setUserEmail] = useState("");
   const [userName, setUserName] = useState("");
@@ -24,9 +24,9 @@ const Login: React.FC<LoginFormProps> = () => {
   const handleLogin = () => {
     signInWithEmailAndPassword(auth, userEmail, userPassword)
       .then(async (cred) => {
-        console.log(cred)
-        setId(cred.user.uid)
-        setEmail(cred.user.email)
+        console.log(cred);
+        setId(cred.user.uid);
+        setEmail(cred.user.email);
 
         // try {
         //     const userDoc = await getDoc(doc(db, 'users', cred.user.uid))
@@ -38,34 +38,32 @@ const Login: React.FC<LoginFormProps> = () => {
         // } catch (error) {
         //     setError(error.message)
         // }
-        navigate("/home")
+        navigate("/home");
       })
-      .catch((error) => setError(error))
+      .catch((error) => setError(error));
   };
 
   return (
-    <div>
-      <h2>Login</h2>
-      {error && <p style={{ color: "red" }}>{error}</p>}
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          value={userEmail}
-          onChange={(e) => setUserEmail(e.target.value)}
-        />
+    <div className="login">
+      <div className="login__content">
+        <h2>Login</h2>
+        {error && <p style={{ color: "red" }}>{error}</p>}
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter email"
+            value={userEmail}
+            onChange={(e) => setUserEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter password"
+            value={userPassword}
+            onChange={(e) => setUserPassword(e.target.value)}
+          />
+        <button onClick={handleLogin}>Login</button>
       </div>
-      <div>
-        <label htmlFor="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          value={userPassword}
-          onChange={(e) => setUserPassword(e.target.value)}
-        />
-      </div>
-      <button onClick={handleLogin}>Login</button>
     </div>
   );
 };
