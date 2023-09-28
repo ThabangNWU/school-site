@@ -7,6 +7,9 @@
 @import url("./css/blogcard.css");
 @import url("./css/blog.css");
 @import url("./css/about.css");
+@import url("./css/topNavigation.css");
+@import url("./css/mainNavigation.css");
+@import url("./css/welcomePage.css");
 
 /* reset */
 *,

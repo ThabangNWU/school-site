@@ -1,0 +1,43 @@
+.body-container{
+    padding-top: 47px;
+    height: 805px;
+    background: rgba(116, 57, 67, 0.50);
+}
+
+body{
+    background-image: url("./IMG_8380.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.body-title p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.body-title{
+    padding-top: 200px;
+}
+
+.body-title h5{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
