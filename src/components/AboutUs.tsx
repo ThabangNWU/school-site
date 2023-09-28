@@ -1,6 +1,5 @@
-
-
-
+import aboutpic1 from '../assets/about1.png'
+import aboutpic2 from '../assets/aboutus2.png'
 const AboutUs = () => {
     return (
       <div className="AboutUs">
@@ -36,15 +35,19 @@ const AboutUs = () => {
               Fuga pariatur, voluptatem voluptate perspiciatis similique
                culpa.
           </p>
+          </div>
+        </div>
+        <div className="Img">
+          <img src={aboutpic2} alt="" />
+        </div>
       </div>
       <img src="" alt=""/>
   </div>
 
   </div>
-  
-  
       </div>
-    )
-  }
-  
-  export default AboutUs
+    </div>
+  );
+};
+
+export default AboutUs;
