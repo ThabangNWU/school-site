@@ -1,21 +1,22 @@
-import aboutpic1 from "../assets/about1.png";
+import aboutpic1 from "../assets/IMG_8007.jpg";
 import aboutpic2 from "../assets/IMG_8006.jpg";
 const AboutUs = () => {
   return (
     <div className="AboutUs">
       <div className="AboutUs-text">
         <h1>ABOUT US</h1>
-        <div id="Rectangle"></div>
+        <hr />
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa
           quidem, molestias doloribus asperiores voluptate architecto natus,
+          <br />
           commodi nobis numquam nesciunt? Repellat libero provident quos soluta
           corporis facilis hic omnis!
         </p>
       </div>
       <div className="AboutUs-body">
         <div className="Mission-section">
-          <img src="" />
+          <img src={aboutpic1} />
           <div className="Mission">
             <h3>Our Mission</h3>
             <p>
@@ -37,12 +38,10 @@ const AboutUs = () => {
               voluptate perspiciatis similique culpa.
             </p>
           </div>
-        </div>
-        <div className="Img">
           <img src={aboutpic2} alt="" />
         </div>
+        
       </div>
-      <img src="" alt="" />
     </div>
   );
 };
