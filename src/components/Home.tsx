@@ -1,5 +1,6 @@
 import AboutUs from "./AboutUs"
 import Aps from "./Aps"
+import Footer from "./Footer"
 import WelcomePage from "./WelcomePage"
 
 const Home = () => {
@@ -10,6 +11,8 @@ const Home = () => {
       <Aps />
       <br />
       <AboutUs />
+      <br />
+      <Footer />
       </>
     )
   }
