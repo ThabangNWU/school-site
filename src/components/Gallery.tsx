@@ -1,3 +1,5 @@
+import React from "react";
+
 const images = [
   "./src/assets/IMG_8007.JPG",
   "./src/assets/IMG_8135.JPG",
@@ -10,20 +12,20 @@ const images = [
   "./src/assets/IMG_8006.JPG",
 ];
 
-const Gallery = () => {
+const Gallery: React.FC = () => {
+  const first8Images = images.slice(0, 8);
+
   return (
-    <div className="gallery">
-      <h1>Gallery</h1>
-      {images.map((image, i) => (
-        <img
-          className="gallery__image"
-          key={i}
-          src={image}
-          style={{ width: "50%", display: "grid" }}
-          alt=""
-        />
+   <div className="gallery">
+    <h1>Gallery</h1>
+    <hr></hr>
+     <div className="image__grid">
+      {first8Images.map((image) => (
+        <img key={image} src={image} alt="Image" />
       ))}
     </div>
+    <button className="gallery__button">See More</button>
+   </div>
   );
 };
 
