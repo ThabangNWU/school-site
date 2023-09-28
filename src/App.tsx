@@ -8,10 +8,6 @@ import Dashboard from "./components/Dashboard";
 import Blog from "./components/Blog";
 import About from "./components/About";;
 import Gallery from "./components/Gallery";
-import WelcomePage from "./components/WelcomePage";
-import TopNavigation from "./components/TopNavigation";
-import MainNavigation from "./components/MainNavigation";
-
 
 export const MyContext = createContext({});
 
@@ -24,18 +20,14 @@ function App() {
     <MyContext.Provider value={{ id, setId, name, setName, email, setEmail }}>
       <Router>
         <Routes>
-          <Route path="/" element={<WelcomePage />} />
-          <Route path="topnav" element={<TopNavigation />} />
-          <Route path="mainnav" element={<MainNavigation />} />
-          <Route path="login" element={<Login />} />
-          <Route path="home" element={<Home />}>
+          <Route path="/" element={<Login />} />
+          <Route path="/home" element={<Home />}>
             <Route index path="dashboard" element={<Dashboard />} />
             <Route path="blog" element={<Blog />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="gallery" element={<Gallery />} />
             <Route path="users" element={<Users />} />
-            
           </Route>
         </Routes>
       </Router>
