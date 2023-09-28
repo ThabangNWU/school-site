@@ -1,79 +1,76 @@
-:root {
-  --primary-red: #743943;
-  --font-type: inter;
-}
-
-* {
-  margin: 0%;
-  padding: 0%;
-  scroll-behavior: smooth;
-}
-
 .AboutUs {
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+}
+.aboutus__container {
+  width: 100%;
+  padding-top: 0 1rem;
+}
+
+.AboutUs-text {  
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10px;
-}
-.AboutUs-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  width: 600px;
-  margin-left: 350px;
+  
 }
-
-.AboutUs-text h1 {
-  color: var(--primary-red);
-  margin: 15px;
-}
-#Rectangle {
-  border: solid var(--primary-red);
-  width: 50px;
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-bottom: 10px;
+.AboutUs-text p {
+  width: 60%;
+  text-align: center;
 }
 .AboutUs-body {
   display: grid;
-  height: 400px;
-  margin-top: 30px;
-  margin-left: 50px;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3.5rem;
+  gap: 10px;
+}
+@media(max-width: 40rem)
+{
+  
+  .AboutUs {
+    width: 100%;}
+  .AboutUs-body {
+   width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .AboutUs-body img {
+    width:20rem !important ;
+  }
+    .Mission, .Vision {
+      width:20rem !important;
+      height: fit-content !important;
+    }
+   
 }
 .AboutUs-body img {
-  background-image: url(../assets/IMG_8007.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
-  width: 600px;
-  height: 250px;
-  overflow: hidden;
-  /* border-radius: 20px; */
-}
-.Mission {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 60px;
-  padding: 3%;
-  width: 550px;
-  height: 150px;
-  /* border-radius: 30px; */
-  background-color: rgb(141, 141, 207);
-}
+  width:585px ;
+  height:306px ;
+  object-fit: cover;
+  aspect-ratio: 1/1;
 
-.Vision {
-  /* border-radius: 30px; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 3%;
-  width: 550px;
-  height: 150px;
-  background-color: rgb(132, 132, 202);
+}
+.Mission, .Vision {
+  color: #fff;
+  width:585px ;
+  height:306px ;
+  background: #283c5c;
+}
+.Mission-width, .Vision-width {
+  margin: 36px;
+}
+.Mission h3 ,.Vision h3{
+  text-align: center;
+  font-size: 24px;
+  line-height: 29.05px;
+  font-weight: 400;
+}
+.Mission p, .Vision p {
+  line-height: 19.36px;
+  font-weight: 400;
+  font-size: 16px;
 }
