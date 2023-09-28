@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-@import url(../src/css/portalNavbar.css);
-@import url(../src/css/contactdashboard.css);
-@import url(../src/css/users.css);
+@import url("../src/css/portalNavbar.css");
+@import url("../src/css/contactdashboard.css");
+@import url("../src/css/users.css");
 @import url("./css/PortalSideNavbar.css");
-
+@import url("./css/login.css");
+@import url("./css/blogcard.css");
+@import url("./css/blog.css");
+@import url("./css/about.css");
+@import url("./css/topNavigation.css");
+@import url("./css/mainNavigation.css");
+@import url("./css/welcomePage.css");
 
 /* reset */
 *,
@@ -32,7 +38,7 @@ img {
 }
 
 body {
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   overflow-x:hidden;
 }
