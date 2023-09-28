@@ -8,9 +8,7 @@ const About = () => {
   const handleOurVision = () => {};
 
   return (
-    <div className="about">
-      <p className="about__title">About us</p>
-      <div className="about__content">
+    <div>
       <p>About us</p>
       <input type="text"></input>
       <button onClick={() => handleAboutUs()}>Save</button>
@@ -22,7 +20,6 @@ const About = () => {
       <p>Our Vision</p>
       <input type="text"></input>
       <button onClick={() => handleOurVision()}>Save</button>
-      </div>
     </div>
   );
 };
