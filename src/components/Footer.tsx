@@ -1,23 +1,26 @@
 import React from 'react';
+import {BsFacebook} from 'react-icons/bs';
+import {FaTwitterSquare} from 'react-icons/fa';
+import {AiOutlineInstagram} from 'react-icons/ai'
 
 const Footer : React.FC= () => {
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="follow-us">
-          <h4>FOLLOW US</h4>
-          <h5>Yes, We are social</h5>
+          <p>FOLLOW US</p>
+          <p className='follow-us__message'>Yes, We are social</p>
           <div className="social-icons">
-            <a href="#"><i className="fab fa-facebook-f"></i></a>
-            <a href="#"><i className="fab fa-instagram"></i></a>
-            <a href="#"><i className="fab fa-twitter"></i></a>
+            <BsFacebook className="facebook-icons"/>
+            <FaTwitterSquare className="twitter-icons"/>
+           <AiOutlineInstagram className="instagram-icons"/>
           </div>
         </div>
         <div className="logo">
-          <h5>L  O  G  O</h5>
+          <h1>L  O  G  O</h1>
         </div>
         <div className="contact">
-          <h4>CONTACT US</h4>
+          <p>CONTACT US</p>
           <p>school@gmail.com</p>
           <p>41 Juta Street Braamfontain</p>
           <p>Johannesburg, 2001</p>
