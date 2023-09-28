@@ -4,8 +4,11 @@
   width: 100%;
   height: 898px;
   flex-shrink: 0;
+  padding-top: 1.5rem;
 }
-
+.card {
+  margin-block: 1rem;
+}
 .header-text {
   font-size: 20px;
   font-family: Inter;
@@ -15,7 +18,7 @@
   margin-bottom: 40px;
 }
 
-.line {
+.lines {
   border-top: 6px solid #743943;
   box-sizing: border-box;
   width: 80px;
@@ -153,7 +156,6 @@
   border: 1px solid var(--Primary-red, #743943);
   background: #fff;
   position: absolute;
-
   left: 115px;
 }
 
