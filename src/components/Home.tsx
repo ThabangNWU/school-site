@@ -1,17 +1,19 @@
-import AboutUs from "./AboutUs"
+// import AboutUs from "./AboutUs"
 import Aps from "./Aps"
+import Blog from "./Blog"
 import Footer from "./Footer"
+import Gallery from "./Gallery"
 import WelcomePage from "./WelcomePage"
+import AboutUs from "./AboutUs"
 
 const Home = () => {
     return (
       <>
       <WelcomePage />
-      <br />
+      {/* <AboutUs /> */}
+      <Blog />
+      <Gallery />
       <Aps />
-      <br />
-      <AboutUs />
-      <br />
       <Footer />
       </>
     )

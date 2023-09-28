@@ -1,0 +1,51 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(172, 175, 173, 0.961);
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .contact {
+    text-align: left;
+  }
+  
+  .logo {
+    text-align: center;
+    font-size: larger;
+  }
+  
+  .follow-us {
+    text-align: right;
+  }
+  
+  .social-icons {
+    display: flex;
+  }
+  
+  .footer hr {
+    margin: 0;
+    border: none;
+    border-top: 1px solid #0d0e0d;
+    bottom: 0;
+    position: absolute;
+  }
+  
+  .footer-text {
+    bottom: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }

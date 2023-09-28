@@ -30,7 +30,6 @@ const Gallery = () => {
             />
            ))} 
             </Masonry> 
-          
         </ResponsiveMasonry>
         </div>
   );

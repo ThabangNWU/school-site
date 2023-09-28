@@ -1,6 +1,6 @@
 // Blog.tsx
 import React from 'react';
-import './Blog.css';
+import '../css/Blog.css';
 import { useNavigate } from 'react-router-dom';
 import Card from './Card'; 
 import { cardsData } from './CardData'; 

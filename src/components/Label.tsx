@@ -1,5 +1,5 @@
 import React from 'react';
-import './Label.css';
+import '../css/Label.css';
 
 const Label: React.FC = () => {
   return (

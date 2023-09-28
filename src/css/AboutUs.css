@@ -8,12 +8,11 @@
   padding-top: 0 1rem;
 }
 
-.AboutUs-text {  
+.AboutUs-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 .AboutUs-text p {
   width: 60%;
@@ -25,146 +24,148 @@
   margin-top: 3.5rem;
   gap: 10px;
 }
-@media(max-width: 40rem)
-{
-  
+
+@media (max-width: 40rem) {
   .AboutUs {
-    width: 100%;}
+    width: 100%;
+  }
   .AboutUs-body {
-   width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding :10px;
-    
-}
-.AboutUs-text{
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
-width: 600px;
-margin-left: 350px;
-margin-bottom: 50px;
-  
-}
-.AboutUs-body img {
-  width:585px ;
-  height:306px ;
-  object-fit: cover;
-  aspect-ratio: 1/1;
-
-.AboutUs-text h1 {
+    padding: 10px;
+  }
+  .AboutUs-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+    margin-left: 350px;
+    margin-bottom: 50px;
+  }
+  .AboutUs-body img {
+    width: 585px;
+    height: 306px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+  .AboutUs-text h1 {
     color: var(--primary-red);
     margin: 12px;
-}
-#Rectangle {
+  }
+
+  #Rectangle {
     border: solid var(--primary-red);
     width: 50px;
-    margin-left:150px;
+    margin-left: 150px;
     margin-right: 150px;
     margin-bottom: 30px;
-    }
-    .AboutUs-body{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .AboutUs-body img{
-        background-image: url(C:\Users\Pascoa\School-website\school-site\src\assets\IMG_8006.JPG);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: left;
-        height: 250px;
-        overflow: hidden;
-        /* border-radius: 20px; */
-    }
-    .Mission-section{
-        display: flex;
-        flex-direction: row;
-        margin-left: 120px;
-    }
-    .Vision-section{
-        margin-top: 20px;
-        display: flex;
-        flex-direction: row;
-        margin-left: 120px;
+  }
+  .AboutUs-body {
+    display: flex;
+    flex-direction: column;
+  }
 
-    }
-    .Vision-section img:hover{
-        transition: transform .12s; /* Animation */
-        border-radius: 10px;
-        transform: scale(1.1);
-    }
-    .Vision-section img {
-        background-image: url(C:\Users\Pascoa\School-website\school-site\src\assets\IMG_8007.JPG);
-        margin-left: 20px;
-        width: 510px;
-        transition: transform .12s; /* Animation */
+  .AboutUs-body img {
+    background-image: url(C:\Users\Pascoa\School-website\school-site\src\assets\IMG_8006.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 250px;
+    overflow: hidden;
+    /* border-radius: 20px; */
+  }
+  .Mission-section {
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+  }
+  .Vision-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+  }
+  .Vision-section img:hover {
+    transition: transform 0.12s; /* Animation */
+    border-radius: 10px;
+    transform: scale(1.1);
+  }
+  .Vision-section img {
+    background-image: url(C:\Users\Pascoa\School-website\school-site\src\assets\IMG_8007.JPG);
+    margin-left: 20px;
+    width: 510px;
+    transition: transform 0.12s; /* Animation */
+  }
+  .Mission-section img:hover {
+    transition: transform 0.12s; /* Animation */
+    border-radius: 10px;
+    transform: scale(
+      1.1
+    ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .Mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    margin-left: 20px;
+    width: 500px;
+    height: 250px;
+    background-color: rgb(141, 141, 207);
+  }
+  .Mission:hover {
+    transition: transform 0.12s; /* Animation */
+    transform: scale(
+      1.1
+    ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    border-radius: 10px;
+    background-color: #fff;
+    border: solid rgb(141, 141, 207);
+  }
+  .Mission-section img {
+    width: 510px;
+  }
+  .Mission h3 {
+    margin: 20px;
+    font-size: 30px;
+  }
+  .Vision h3 {
+    margin: 20px;
+    font-size: 30px;
+  }
+  .Mission h3:hover {
+    margin: 20px;
+    font-size: 40px;
+    color: rgb(141, 141, 207);
+  }
+  .Vision h3:hover {
+    margin: 20px;
+    font-size: 40px;
+    color: rgb(141, 141, 207);
+  }
 
-    }
-    .Mission-section img:hover{
-        transition: transform .12s; /* Animation */
-            border-radius: 10px;
-            transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-            }
-    .Mission{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items:center;
-        padding-left: 10px;
-        margin-left: 20px;
-        width: 500px;
-        height: 250px;
-        background-color: rgb(141, 141, 207);
-    }
-    .Mission:hover {
-        transition: transform .12s; /* Animation */
-        transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-        border-radius: 10px;
-        background-color: #fff;
-        border: solid rgb(141, 141, 207);
-      }
-    .Mission-section img{
-        width: 510px;
-    }
-    .Mission h3 {
-        margin: 20px;
-        font-size:30px;
-    }
-    .Vision h3 {
-        margin: 20px;
-        font-size:30px;
-        
-    }
-    .Mission h3:hover{
-        margin: 20px;
-        font-size:40px;
-        color:rgb(141, 141, 207);
-    }
-    .Vision h3:hover{
-        margin: 20px;
-        font-size:40px;
-        color: rgb(141, 141, 207);
-    }
+  .Vision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    width: 500px;
+    height: 250px;
+    background-color: rgb(141, 141, 207);
+  }
 
-
-    .Vision{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-left: 10px;
-        width: 500px;
-        height: 250px;
-        background-color: rgb(141, 141, 207); 
-    }
-
-    .Vision:hover {
-        transition: transform .12s; /* Animation */
-        transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-        border-radius: 10px;
-        background-color: #fff;
-        border: solid rgb(141, 141, 207);
-      }
+  .Vision:hover {
+    transition: transform 0.12s; /* Animation */
+    transform: scale(
+      1.1
+    ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    border-radius: 10px;
+    background-color: #fff;
+    border: solid rgb(141, 141, 207);
+  }
+}

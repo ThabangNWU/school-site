@@ -2,8 +2,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Card from './Card';
-import './Blog.css';
-import './Posts.css';
+import '../css/Blog.css'
+import '../css/Posts.css';
 import { cardsData } from './CardData';
 
 const Posts: React.FC = () => {
