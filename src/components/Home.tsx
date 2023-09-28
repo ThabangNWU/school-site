@@ -1,17 +1,17 @@
-import { PortalNavbar } from "./PortalNavBar";
-import PortalSideNavbar from "./PortalSideNavbar";
-import { Outlet } from "react-router-dom";
+import AboutUs from "./AboutUs"
+import Aps from "./Aps"
+import WelcomePage from "./WelcomePage"
 
 const Home = () => {
-  return (
-    <div className="home__container">
-      <PortalSideNavbar />
-      <div className="home__container__right">
-        <PortalNavbar />
-        <div className="home__container__content"><Outlet /></div>
-      </div>
-    </div>
-  );
-};
-
-export default Home;
+    return (
+      <>
+      <WelcomePage />
+      <br />
+      <Aps />
+      <br />
+      <AboutUs />
+      </>
+    )
+  }
+  
+  export default Home
