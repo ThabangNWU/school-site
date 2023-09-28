@@ -1,33 +1,39 @@
 import aboutpic1 from '../assets/about1.png'
 import aboutpic2 from '../assets/aboutus2.png'
 const AboutUs = () => {
-  return (
-    <div className="AboutUs">
-      <div className='aboutus__container'>
-      <div className="AboutUs-text">
-        <h1>ABOUT US</h1>
-        <div id="Rectangle"></div>
-        <p>
-        Lorem ipsum dolor sit amet consectetur. Praesent est lectus vulputate nec sodales placerat egestas dignissim. Malesuada faucibus lorem accumsan sem venenatis imperdiet dolor. Nisl quis semper vulputate habitasse facilisis congue nec. Quis lectus sit velit cras metus.
-        </p>
-      </div>
-      <div className="AboutUs-body">
-        <div className="Img">
-          <img src= {aboutpic1} />
-        </div>
-        <div className="Mission">
-          <div className='Mission-width'>
-          <h3>Our Mission</h3>
-            <p>
-            Lorem ipsum dolor sit amet consectetur. Sodales vestibulum integer nisl sodales id. Tellus est sit quis at suspendisse in massa egestas. Blandit aliquam sit rhoncus vitae est est justo pellentesque. Duis enim tincidunt proin urna gravida quam commodo malesuada rutrum. Est a nibh ut ac est pellentesque. Molestie tellus lobortis tortor ultricies in dignissim pellentesque proin mattis. Magna pulvinar non praesent at mattis senectus praesent tellus.
-            </p>
+    return (
+      <div className="AboutUs">
+          <div className="AboutUs-text">
+              <h1>ABOUT US</h1>
+              <div id="Rectangle"></div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                   Odio ipsa quidem, molestias doloribus asperiores voluptate 
+                   architecto natus, commodi nobis numquam nesciunt?
+                   Repellat libero provident quos soluta corporis facilis
+                   hic omnis!</p>
           </div>
-        </div>
-        <div className="Vision">
-          <div className='Vision-width'>
+  <div className="AboutUs-body">
+    <div className="Mission-section">
+      <img src="" />
+      <div className="Mission">
+          <h3>Our Mission</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+              Magnam quos nam libero ducimus impedit accusantium ea 
+              ipsam tempore, voluptas neque inventore atque dolorum! 
+              Fuga pariatur, voluptatem voluptate perspiciatis similique
+               culpa.
+          </p>
+      </div>
+      </div>
+      
+      <div className="Vision-section">
+      <div className="Vision">
           <h3>Our Vision</h3>
-          <p>
-          Lorem ipsum dolor sit amet consectetur. Sodales vestibulum integer nisl sodales id. Tellus est sit quis at suspendisse in massa egestas. Blandit aliquam sit rhoncus vitae est est justo pellentesque. Duis enim tincidunt proin urna gravida quam commodo malesuada rutrum. Est a nibh ut ac est pellentesque. Molestie tellus lobortis tortor ultricies in dignissim pellentesque proin mattis. Magna pulvinar non praesent at mattis senectus praesent tellus.
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+              Magnam quos nam libero ducimus impedit accusantium ea 
+              ipsam tempore, voluptas neque inventore atque dolorum! 
+              Fuga pariatur, voluptatem voluptate perspiciatis similique
+               culpa.
           </p>
           </div>
         </div>
@@ -35,6 +41,10 @@ const AboutUs = () => {
           <img src={aboutpic2} alt="" />
         </div>
       </div>
+      <img src="" alt=""/>
+  </div>
+
+  </div>
       </div>
     </div>
   );
