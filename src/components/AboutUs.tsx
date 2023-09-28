@@ -14,9 +14,8 @@ const AboutUs = () => {
                    hic omnis!</p>
           </div>
   <div className="AboutUs-body">
-    <div className="Img">
+    <div className="Mission-section">
       <img src="" />
-      </div>
       <div className="Mission">
           <h3>Our Mission</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -24,9 +23,11 @@ const AboutUs = () => {
               ipsam tempore, voluptas neque inventore atque dolorum! 
               Fuga pariatur, voluptatem voluptate perspiciatis similique
                culpa.
-  
           </p>
       </div>
+      </div>
+      
+      <div className="Vision-section">
       <div className="Vision">
           <h3>Our Vision</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -34,12 +35,11 @@ const AboutUs = () => {
               ipsam tempore, voluptas neque inventore atque dolorum! 
               Fuga pariatur, voluptatem voluptate perspiciatis similique
                culpa.
-  
           </p>
       </div>
-      <div className="Img">
       <img src="" alt=""/>
   </div>
+
   </div>
   
   
