@@ -21,7 +21,7 @@ const Blog: React.FC = () => {
       <section className="blog-section">
         <div className="header-text">
           <h1>BLOG</h1>
-          <div className="line"></div>
+          <div className="lines"></div>
         </div>
         <div className="text-container">
           <div className="text">
