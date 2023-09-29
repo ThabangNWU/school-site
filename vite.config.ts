@@ -6,5 +6,7 @@ export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
     include: ['**/*.js', '**/*.ts', '**/*.jsx', '**/*.tsx', '**/*.vue', '**/*.jpg'],
-},
+}
+
+
 })
