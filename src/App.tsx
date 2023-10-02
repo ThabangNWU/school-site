@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { createContext, useState } from "react";
-import Home from "./components/Home";
+import Portal from "./components/Portal";
 import { Contact } from "./components/Contact";
 import { Users } from "./components/Users";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
-import Blog from "./components/Blog";
-import About from "./components/About";;
-import Gallery from "./components/Gallery";
+import AboutUsPortal from "./components/AboutUsPortal";;
+import BlogPortal from "./components/BlogPortal";
+import GalleryPortal from "./components/GalleryPortal";
 
 export const MyContext = createContext({});
 
@@ -21,12 +21,12 @@ function App() {
       <Router>
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/portal" element={<Home />}>
+          <Route path="/portal" element={<Portal />}>
             <Route index path="dashboard" element={<Dashboard />} />
-            <Route path="blog" element={<Blog />} />
-            <Route path="about" element={<About />} />
+            <Route path="blog" element={<BlogPortal />} />
+            <Route path="about" element={<AboutUsPortal />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="gallery" element={<Gallery />} />
+            <Route path="gallery" element={<GalleryPortal />} />
             <Route path="users" element={<Users />} />
           </Route>
         </Routes>

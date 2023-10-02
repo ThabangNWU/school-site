@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => {
+const AboutUsPortal = () => {
   const handleAboutUs = () => {};
 
   const handleOurMission = () => {};
@@ -27,4 +27,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutUsPortal;

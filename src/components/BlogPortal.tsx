@@ -1,7 +1,7 @@
 import React from "react";
 import BlogCard from "./BlogCard";
 
-const Blog = () => {
+const BlogPortal = () => {
   const arr = [1, 2, 3, 4, 5, 6];
   return (
     <div className="blog">
@@ -31,4 +31,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogPortal;
