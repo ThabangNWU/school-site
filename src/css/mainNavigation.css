@@ -13,8 +13,16 @@
     gap: 30px;
     /* background: rgba(116, 57, 67, 0.50); */
 }
-
+.body {
+    background: red !important;
+}
 .mainNav h1{
     color: #ffff;
     font-size: 36px;
+}
+
+@media(max-width :789px) {
+    .mainNav {
+        flex-direction: column;
+    }
 }

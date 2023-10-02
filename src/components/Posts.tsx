@@ -5,6 +5,7 @@ import Card from './Card';
 import '../css/Blog.css'
 import '../css/Posts.css';
 import { cardsData } from './CardData';
+import {Pagination}  from './Pagination';
 
 const Posts: React.FC = () => {
   const navigate = useNavigate();
@@ -12,21 +13,9 @@ const Posts: React.FC = () => {
   const handleReadMoreClick = () => {
     navigate('/label');
   };
-
-  const cards = [];
-  for (let i = 0; i < 6; i++) {
-    cards.push(
-      <Card
-        key={i}
-        imageUrl={cardsData[i % cardsData.length].imageUrl}
-        title={cardsData[i % cardsData.length].title}
-        body={cardsData[i % cardsData.length].body}
-        onReadMoreClick={handleReadMoreClick}
-      />
-    );
-  }
-
-  return <div className="posts-container">{cards}</div>;
+  return (   
+    <Pagination />    
+  )
 };
 
 export default Posts;

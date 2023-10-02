@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+.AboutUs { 
+  height: 140vh;
+  width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+@media(max-width: 789px) {
+  
+}
+
 .AboutUs-text hr {
   width: 5rem;
   height: .2rem;

@@ -52,21 +52,22 @@ const Aps: React.FC = () => {
     if (!totalLevels) {
       return "";
     } else if (totalLevels <= 14) {
-      return "National Senior Certificate - 14 APS Points";
-    } else if (totalLevels <= 15) {
-      return "Higher Certificate Pass - 15 APS Points";
-    } else if (totalLevels <= 19) {
-      return "Diploma Pass - 19 APS Points";
+      return `National Senior Certificate - your APS score  is ${totalLevels}`;
+    } else if (totalLevels >= 15 && totalLevels < 19) {
+      return `Higher Certificate Pass - your APS score  is ${totalLevels}`;
+    } else if (totalLevels >= 19 && totalLevels < 23) {
+      return `Diploma Pass - your APS score  is ${totalLevels}`;
     } else {
-      return "Bachelors Pass - 23 APS Points";
+      return `Bachelors Pass - your APS score  is ${totalLevels}`;
     }
   };
 
   return (
-    <div className="container">
-      <h1>APS SCORE CALCULATOR</h1>
-
-      <div className="line"></div>
+    <div className="aps-calculator">
+      <div className="aps-calculator-headings">
+        <h1>APS SCORE CALCULATOR</h1>
+        <div className="line"></div>
+      </div>
       <div className="message">
         <p>
           In case you didn’t know, APS stands for Admission Point Score. In

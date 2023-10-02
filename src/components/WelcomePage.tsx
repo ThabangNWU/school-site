@@ -4,7 +4,9 @@ import MainNavigation from "./MainNavigation";
 const WelcomePage = () => {
   return (
     <>
-      <div className="info-bar-nav">
+    <div className="section-one">
+      
+    <div className="info-bar-nav">
         <TopNavigation />
       </div>
 
@@ -36,6 +38,7 @@ const WelcomePage = () => {
           </svg>
         </div>
       </div>
+    </div>
     </>
   );
 };
