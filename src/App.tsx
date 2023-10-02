@@ -20,8 +20,8 @@ function App() {
     <MyContext.Provider value={{ id, setId, name, setName, email, setEmail }}>
       <Router>
         <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/home" element={<Home />}>
+          <Route path="/login" element={<Login />} />
+          <Route path="/portal" element={<Home />}>
             <Route index path="dashboard" element={<Dashboard />} />
             <Route path="blog" element={<Blog />} />
             <Route path="about" element={<About />} />

@@ -38,7 +38,7 @@ const Login: React.FC<LoginFormProps> = () => {
         // } catch (error) {
         //     setError(error.message)
         // }
-        navigate("/home");
+        navigate("/portal");
       })
       .catch((error) => setError(error));
   };
