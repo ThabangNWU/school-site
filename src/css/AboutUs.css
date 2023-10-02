@@ -1,0 +1,76 @@
+.AboutUs-text:nth-child(1) {
+  text-align: center;
+}
+
+.AboutUs { 
+  height: 140vh;
+  width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+@media(max-width: 789px) {
+  
+}
+
+.AboutUs-text hr {
+  width: 5rem;
+  height: .2rem;
+  background-color: black;
+}
+.AboutUs-text p {
+  padding: 1rem 0rem 1rem 0rem;
+}
+.Mission-section {
+  display: flex;
+  padding: 1rem 2rem 1rem 2rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.Mission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #273A5C;
+  width: 40%;
+  height: 20rem;
+  color: white;
+  justify-content: center;
+}
+
+.Mission p {
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+.Mission-section img {
+  width: 40%;
+  height: 20rem;
+}
+
+.Vision-section {
+  display: flex;
+  padding: 1rem 2rem 1rem 2rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.Vision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #273A5C;
+  width: 40%;
+  height: 20rem;
+  color: white;
+  justify-content: center;
+}
+
+.Vision p {
+  padding: 0rem 1rem 0rem 1rem;
+}
+.Vision-section img {
+  width: 40%;
+  height: 20rem;
+}

@@ -1,4 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Label from './components/Label';
+import Posts from "./components/Posts";
+import Aps from "./components/Aps";
 import { createContext, useState } from "react";
 import Portal from "./components/Portal";
 import { Contact } from "./components/Contact";
@@ -12,14 +16,15 @@ import GalleryPortal from "./components/GalleryPortal";
 export const MyContext = createContext({});
 
 function App() {
-  const [id, setId] = useState(0);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-
   return (
+
     <MyContext.Provider value={{ id, setId, name, setName, email, setEmail }}>
       <Router>
         <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/label" element={<Label />} />
+          <Route path="/posts" element={<Posts />} />
+          <Route path="/apscalculator" element={<Aps />} />
           <Route path="/login" element={<Login />} />
           <Route path="/portal" element={<Portal />}>
             <Route index path="dashboard" element={<Dashboard />} />
