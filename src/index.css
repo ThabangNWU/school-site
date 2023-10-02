@@ -6,4 +6,62 @@
 @import url('./css/topNavigation.css');
 @import url('./css/footer.css');
 @import url('./css/gallery.css');
+@import url("../src/css/portalNavbar.css");
+@import url("../src/css/contactdashboard.css");
+@import url("../src/css/users.css");
+@import url("./css/PortalSideNavbar.css");
+@import url("./css/login.css");
+@import url("./css/blogcard.css");
+@import url("./css/blogPortal.css");
+@import url("./css/aboutUsPortal.css");
 
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul,
+ol{
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  overflow-x:hidden;
+}
+
+:root {
+    --clr-neutral-900: #D9D9D9;
+    --spacer : 1rem;
+}
+
+.home__container {
+    display: flex;
+}
+
+.home__container__right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.home__container__content {
+    height: 100%;
+}

@@ -5,7 +5,7 @@ const TopNavigation = () => {
         <a href="#">Phone : 068 529 5764</a>
         <a href="#">Email : sebitjasec7@gmail.com </a>
         <span className="split">
-          <a href="#" className="portal-right">
+          <a href="/login" className="portal-right">
             Portal
           </a>
           <button className="btnSupport">Support Us</button>

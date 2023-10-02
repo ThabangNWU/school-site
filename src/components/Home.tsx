@@ -1,8 +1,8 @@
 // import AboutUs from "./AboutUs"
 import Aps from "./Aps"
-import Blog from "./Blog"
+import Blog from "./Gallery"
 import Footer from "./Footer"
-import Gallery from "./Gallery"
+import Gallery from "./Blog"
 import WelcomePage from "./WelcomePage"
 import AboutUs from "./AboutUs"
 
