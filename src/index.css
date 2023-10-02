@@ -5,8 +5,8 @@
 @import url("./css/PortalSideNavbar.css");
 @import url("./css/login.css");
 @import url("./css/blogcard.css");
-@import url("./css/blog.css");
-@import url("./css/about.css");
+@import url("./css/blogPortal.css");
+@import url("./css/aboutUsPortal.css");
 
 /* reset */
 *,
