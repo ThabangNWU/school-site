@@ -1,5 +1,5 @@
-import aboutpic1 from "../assets/IMG_8007.jpg";
-import aboutpic2 from "../assets/IMG_8006.jpg";
+import aboutpic1 from "../assets/aboutus1.png";
+import aboutpic2 from "../assets/school.jpg";
 const AboutUs = () => {
   return (
     <div className="AboutUs">

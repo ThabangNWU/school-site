@@ -2,7 +2,7 @@
 import React from 'react';
 import '../css/Blog.css';
 import { useNavigate } from 'react-router-dom';
-import Card from './Card'; 
+import Card  from './Card'; 
 import { cardsData } from './CardData'; 
 
 const Blog: React.FC = () => {
@@ -29,7 +29,7 @@ const Blog: React.FC = () => {
           </div>
         </div>
         <div className="cards">
-          {cardsData.map((card, index) => (
+          {cardsData.slice(0, 3).map((card, index) =>  (
             <Card
               key={index}
               imageUrl={card.imageUrl}

@@ -1,15 +1,17 @@
 .body-container{
-    padding-top: 47px;
-    height: 805px;
+    padding-block: 47px;    
     background: rgba(116, 57, 67, 0.50);
+
 }
 
-body{
-    background-image: url("./IMG_8380.JPG");
+.section-one {
+    background-image: url(../assets/7f075833-4342-4f48-8395-96c19c2e6acc.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    height: fit-content;
+    width: 100%;
+    position: relative;
+   
 }
-
 .body-title p{
     display: flex;
     justify-content: center;
@@ -23,6 +25,7 @@ body{
 .body-title{
     padding-top: 200px;
 }
+
 
 .body-title h5{
     color: #fff;
