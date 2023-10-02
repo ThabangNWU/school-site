@@ -16,8 +16,11 @@ import GalleryPortal from "./components/GalleryPortal";
 export const MyContext = createContext({});
 
 function App() {
-  return (
+  const [id, setId] = useState(0);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
+  return (
     <MyContext.Provider value={{ id, setId, name, setName, email, setEmail }}>
       <Router>
         <Routes>

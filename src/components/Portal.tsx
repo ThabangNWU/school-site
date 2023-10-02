@@ -2,7 +2,7 @@ import { PortalNavbar } from "./PortalNavBar";
 import PortalSideNavbar from "./PortalSideNavbar";
 import { Outlet } from "react-router-dom";
 
-const Home = () => {
+const Portal = () => {
   return (
     <div className="home__container">
       <PortalSideNavbar />
@@ -14,4 +14,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Portal;
