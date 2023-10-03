@@ -1,5 +1,6 @@
 import React from "react";
 import BlogCard from "./BlogCard";
+import { Link } from "react-router-dom";
 
 const BlogPortal = () => {
   const arr = [1, 2, 3, 4, 5, 6];
@@ -7,7 +8,7 @@ const BlogPortal = () => {
     <div className="blog">
       <div className="blog__header">
         <p>OUR STORIES</p>
-        <button>CREATE POST</button>
+        <button><Link to={"/portal/createpost"}>CREATE POST</Link></button>
       </div>
       <div className="blog__cards">
         <BlogCard />
