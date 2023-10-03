@@ -4,19 +4,21 @@ const AboutUs = () => {
   return (
     <div className="AboutUs">
       <div className="AboutUs-text">
-        <h1>ABOUT US</h1>
-        <hr />
-        <p>
+        <h1>ABOUT US</h1>      
+      </div>
+      <div className="text-container">
+      <p >
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa
-          quidem, molestias doloribus asperiores voluptate architecto natus,
-          <br />
+          quidem, molestias doloribus asperiores voluptate architecto natus,         
           commodi nobis numquam nesciunt? Repellat libero provident quos soluta
           corporis facilis hic omnis!
         </p>
       </div>
       <div className="AboutUs-body">
         <div className="Mission-section">
+          <div className="mission-image">
           <img src={aboutpic1} />
+          </div>
           <div className="Mission">
             <h3>Our Mission</h3>
             <p>
@@ -38,7 +40,10 @@ const AboutUs = () => {
               voluptate perspiciatis similique culpa.
             </p>
           </div>
-          <img src={aboutpic2} alt="" />
+          <div className="vision__image">
+            <img src={aboutpic2} alt="" />
+          </div>
+          
         </div>
         
       </div>

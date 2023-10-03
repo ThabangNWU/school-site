@@ -6,6 +6,7 @@
 .navbar {
   background: var(--clr-neutral-900);
   width: 100%;
+  /* padding-block: 1rem; */
   /* float:right;
   position: fixed;
   top:0;
@@ -16,7 +17,7 @@
   padding: var(--spacer);
 }
 
-.split {
+.splits {
   display: flex;
   flex-direction: row;
   align-items: center;
