@@ -12,6 +12,7 @@ import Dashboard from "./components/Dashboard";
 import AboutUsPortal from "./components/AboutUsPortal";;
 import BlogPortal from "./components/BlogPortal";
 import GalleryPortal from "./components/GalleryPortal";
+import AddNewUser from "./components/AddNewUser";
 
 export const MyContext = createContext({});
 
@@ -36,6 +37,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="gallery" element={<GalleryPortal />} />
             <Route path="users" element={<Users />} />
+            <Route path="users/add" element={<AddNewUser />} />
           </Route>
         </Routes>
       </Router>

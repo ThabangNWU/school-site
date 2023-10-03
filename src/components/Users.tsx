@@ -1,15 +1,17 @@
 import profilePictue from "../assets/me.jpg";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { GrFormEdit } from "react-icons/gr";
+import { useNavigate } from "react-router-dom";
 
 export const Users = () => {
+  const navigate = useNavigate()
   return (
     <>
       <div className="users">
         <div className="users__container">
           <div className="users__title__button">
             <h3>USERS</h3>
-            <button>Add New</button>
+            <button onClick={() => navigate("add")}>Add New</button>
           </div>
 
           <div className="users__details">

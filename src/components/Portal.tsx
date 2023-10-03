@@ -3,7 +3,7 @@ import PortalSideNavbar from "./PortalSideNavbar";
 import { Outlet } from "react-router-dom";
 
 const Portal = () => {
-  return (
+    return (
     <div className="home__container">
       <PortalSideNavbar />
       <div className="home__container__right">
