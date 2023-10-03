@@ -18,7 +18,6 @@ export const PortalNavbar = () => {
                     <AiOutlineDown className="chevron-down"/>
                 </div>
             </div>
-           
         </div>
     </div>
   );
