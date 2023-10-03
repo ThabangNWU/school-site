@@ -6,7 +6,7 @@ export const PortalNavbar = ()  => {
     return (
     <div className="navbar">
         <div className="navbar__container">
-            <div className='split'>
+            <div className='splits'>
                 <div className="navbar__breadcrumb">
                     <AiOutlineMenu/>
                 </div>

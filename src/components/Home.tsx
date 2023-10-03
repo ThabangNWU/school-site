@@ -11,8 +11,8 @@ const Home = () => {
       <>
       <WelcomePage />
       <AboutUs />
-      <Blog />
       <Gallery />
+      <Blog />     
       <Aps />
       <Footer />
       </>

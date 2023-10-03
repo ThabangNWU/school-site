@@ -30,3 +30,17 @@
   .footer-text {
     text-align: center;
   }
+  @media(max-width : 768px) {
+    .footer-content {
+      flex-direction: column;
+      
+    }
+    .follow-us__message {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .social-icons {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
