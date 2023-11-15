@@ -1,4 +1,3 @@
-import {useAddBlog} from '../hooks/useAddBlog'
 import { useState } from 'react';
 
 export const CreatePost = () => {

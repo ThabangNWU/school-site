@@ -1,10 +1,7 @@
 import { AiOutlineMenu, AiOutlineDown } from "react-icons/ai";
 import profilePicture from "../assets/me.jpg";
-import { useContext } from "react";
-import { MyContext } from "../App";
 
 export const PortalNavbar = () => {
-  const { email } = useContext(MyContext);
   return (
     <div className="navbar">
         <div className="navbar__container">

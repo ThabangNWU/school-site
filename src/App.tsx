@@ -3,7 +3,6 @@ import Home from "./components/Home";
 import Label from './components/Label';
 import Posts from "./components/Posts";
 import Aps from "./components/Aps";
-import { createContext, useState } from "react";
 import Portal from "./components/Portal";
 import { Contact } from "./components/Contact";
 import { Users } from "./components/Users";
@@ -15,15 +14,8 @@ import GalleryPortal from "./components/GalleryPortal";
 import AddNewUser from "./components/AddNewUser";
 import { CreatePost } from "./components/CreatePost";
 
-export const MyContext = createContext({});
-
 function App() {
-  const [id, setId] = useState(0);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-
   return (
-    <MyContext.Provider value={{ id, setId, name, setName, email, setEmail }}>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -43,7 +35,6 @@ function App() {
           </Route>
         </Routes>
       </Router>
-    </MyContext.Provider>
   );
 }
 

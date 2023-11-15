@@ -1,6 +1,28 @@
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const PortalSideNavbar = () => {
+  const navigate = useNavigate();
+
+  const handleSignOut = () => {
+    fetch(`http://localhost:8080/api/auth/signout`, {
+      method: "POST"
+    })
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        } else {
+          throw new Error("Network response was not ok");
+        }
+      })
+      .then((data) => {
+        if (data) navigate("/login")
+      })
+      .catch((error) => {
+        console.error("Fetch error", error);
+      });
+  }
+
   return (
     <div className="side__nav__container">
       <div className="side__nav__container__main">
@@ -114,7 +136,7 @@ const PortalSideNavbar = () => {
         </ul>
       </div>
 
-      <div className="side__nav__container__buttons">
+      <div className="side__nav__container__buttons" onClick={() => handleSignOut()}>
         <div>
           <svg
             width="18"

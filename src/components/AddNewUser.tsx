@@ -1,30 +1,26 @@
 import React, { useState } from "react";
-import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
-import { collection, doc, setDoc } from "firebase/firestore";
-import { db } from "./Login";
-import { uploadImage } from "../utils/UploadImage"
 
 interface FormData {
-  fullName: string;
+  firstName: string;
+  lastName: string,
   email: string;
   mobileNumber: string;
-  designation: string;
+  designation: Array<string>;
   password: string;
 }
 
 const initialFormData: FormData = {
-  fullName: "",
+  firstName: "",
+  lastName: "",
   email: "",
   mobileNumber: "",
-  designation: "",
+  designation: ["CONTENT_CREATOR"],
   password: "",
 };
 
 const AddNewUser: React.FC = () => {
   const [formData, setFormData] = useState<FormData>(initialFormData);
   const [selectedImage, setSelectedImage] = useState<File>();
-
-  const auth = getAuth();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -38,38 +34,46 @@ const AddNewUser: React.FC = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const colRef = collection(db, "users");
-    try {
-      const { user } = await createUserWithEmailAndPassword(
-        auth,
-        formData.email,
-        formData.password
-      );
+    e.preventDefault()
 
-      console.log(user.uid);
+    const newUser = new FormData();
+    newUser.append("first_name", formData.firstName)
+    newUser.append("last_name", formData.lastName)
+    newUser.append("email", formData.email)
+    newUser.append("mobile_number", formData.mobileNumber)
+    newUser.append("roles", formData.designation)
+    newUser.append("image", selectedImage)
+    newUser.append("password", formData.password)
 
-      const imageUrl = await uploadImage(selectedImage as File)
+    fetch(`http://localhost:8080/api/auth/adduser`, {
+      method: "POST",
+      headers: {
+        'Authorization': `Bearer jwtCookie=${sessionStorage.getItem("token")}`
+      },
+      body: newUser,
+    })
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        } else {
+          throw new Error("Network response was not ok");
+        }
+      })
+      .then((data) => {
+        console.log("Server response:", data);
+      })
+      .catch((error) => {
+        console.error("Fetch error", error);
+      });
 
-      const userDoc = doc(colRef, user.uid);
-      const userData = {
-        fullName: formData.fullName,
-        mobileNumber: formData.mobileNumber,
-        designation: formData.designation,
-        imageUrl: imageUrl,
-      };
-
-      await setDoc(userDoc, userData);
-    } catch (error) {
-      console.error("Registration error:", error);
-    }
+    console.log("Data posted successfully!");
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-      <div>
-          <label htmlFor="fullName">Image:</label>
+    <div className="adduser">
+      <form className="adduser__form" onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="image">Image:</label>
           <input
             type="file"
             id="image"
@@ -79,12 +83,23 @@ const AddNewUser: React.FC = () => {
           />
         </div>
         <div>
-          <label htmlFor="fullName">Full Name:</label>
+          <label htmlFor="firstName">First Name:</label>
           <input
             type="text"
-            id="fullName"
-            name="fullName"
-            value={formData.fullName}
+            id="firstName"
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="lastName">Last Name:</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            value={formData.lastName}
             onChange={handleChange}
             required
           />
@@ -112,18 +127,7 @@ const AddNewUser: React.FC = () => {
           />
         </div>
         <div>
-          <label htmlFor="designation">Designation:</label>
-          <input
-            type="text"
-            id="designation"
-            name="designation"
-            value={formData.designation}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="designation">Password:</label>
+          <label htmlFor="password">Password:</label>
           <input
             type="password"
             id="password"

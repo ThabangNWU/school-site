@@ -1,6 +1,5 @@
 import TopNavigation from "./TopNavigation";
 import MainNavigation from "./MainNavigation";
-
 const WelcomePage = () => {
   return (
     <>
