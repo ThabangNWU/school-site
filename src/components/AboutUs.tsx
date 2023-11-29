@@ -1,5 +1,4 @@
-import aboutpic1 from "../assets/aboutus1.png";
-import aboutpic2 from "../assets/school.jpg";
+
 const AboutUs = () => {
   return (
     <div className="AboutUs">
@@ -17,7 +16,7 @@ const AboutUs = () => {
       <div className="AboutUs-body">
         <div className="Mission-section">
           <div className="mission-image">
-          <img src={aboutpic1} />
+          <img src={`http://localhost:8080/api/auth/image/mission/1`} />
           </div>
           <div className="Mission">
             <h3>Our Mission</h3>
@@ -41,7 +40,7 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="vision__image">
-            <img src={aboutpic2} alt="" />
+            <img src={`http://localhost:8080/api/auth/image/vision/1`} alt="" />
           </div>
           
         </div>
