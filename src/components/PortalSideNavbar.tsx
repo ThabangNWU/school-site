@@ -5,7 +5,7 @@ const PortalSideNavbar = () => {
   const navigate = useNavigate();
 
   const handleSignOut = () => {
-    fetch(`http://localhost:8080/api/auth/signout`, {
+    fetch(`//school-site-api-production.up.railway.app/api/auth/signout`, {
       method: "POST"
     })
       .then((res) => {

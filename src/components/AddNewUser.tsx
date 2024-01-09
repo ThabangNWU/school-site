@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState } from "react";
 
 interface FormData {
@@ -45,7 +46,7 @@ const AddNewUser: React.FC = () => {
     newUser.append("image", selectedImage)
     newUser.append("password", formData.password)
 
-    fetch(`http://localhost:8080/api/auth/adduser`, {
+    fetch(`//school-site-api-production.up.railway.app/api/auth/adduser`, {
       method: "POST",
       headers: {
         'Authorization': `Bearer jwtCookie=${sessionStorage.getItem("token")}`

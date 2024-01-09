@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useEffect, useState } from "react";
 import { json } from "react-router-dom";
 
@@ -14,7 +15,7 @@ const AboutUsPortal = () => {
     formData.append("image", file);
     formData.append("option", selectedImage);
 
-    fetch(`http://localhost:8080/api/auth/add/about/image`, {
+    fetch(`//school-site-api-production.up.railway.app/api/auth/add/about/image`, {
       method: "POST",
       body: formData,
     })
@@ -34,7 +35,7 @@ const AboutUsPortal = () => {
   };
 
   const handleAboutUs = () => {
-    fetch(`http://localhost:8080/api/auth/update/aboutus/1`, {
+    fetch(`//school-site-api-production.up.railway.app/api/auth/update/aboutus/1`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -57,7 +58,7 @@ const AboutUsPortal = () => {
   };
 
   const handleOurMission = () => {
-    fetch(`http://localhost:8080/api/auth/update/mission/1`, {
+    fetch(`//school-site-api-production.up.railway.app/api/auth/update/mission/1`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -80,7 +81,7 @@ const AboutUsPortal = () => {
   };
 
   const handleOurVision = () => {
-    fetch(`http://localhost:8080/api/auth/update/vision/1`, {
+    fetch(`//school-site-api-production.up.railway.app/api/auth/update/vision/1`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -105,7 +106,7 @@ const AboutUsPortal = () => {
   useEffect(() => {
     const fecthData = async () => {
       try {
-        const response = await fetch("http://localhost:8080/api/auth/about/1");
+        const response = await fetch("//school-site-api-production.up.railway.app/api/auth/about/1");
         if (!response.ok) {
           throw new Error("Network is not ok");
         }
