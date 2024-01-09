@@ -1,7 +1,6 @@
 import { PortalNavbar } from "./PortalNavBar";
 import PortalSideNavbar from "./PortalSideNavbar";
 import { Outlet } from "react-router-dom";
-import { useEffect } from "react"
 
 const Portal = () => {
 //  useEffect(()=>{

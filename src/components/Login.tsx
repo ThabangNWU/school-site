@@ -9,7 +9,7 @@ const Login: React.FC<LoginFormProps> = () => {
   const navigate = useNavigate();
   const [userEmail, setUserEmail] = useState("");
   const [userPassword, setUserPassword] = useState("");
-  const [error, setError] = useState<string | null>(null);
+  const [error] = useState<string | null>(null);
 
   const handleLogin = () => {
     fetch(`//school-site-api-production.up.railway.app/api/auth/signin`, {
