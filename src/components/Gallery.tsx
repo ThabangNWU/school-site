@@ -2,14 +2,14 @@ import React from "react";
 
 const images = [
   "../assets/IMG_8007.JPG",
-  "./src/assets/IMG_8135.JPG",
-  "./src/assets/IMG_8169.JPG",
-  "./src/assets/IMG_8722.JPG",
-  "./src/assets/IMG_8724.JPG",
-  "./src/assets/IMG_8726.JPG",
-  "./src/assets/IMG_8731.JPG",
-  "./src/assets/IMG_8006.JPG",
-  "./src/assets/IMG_8006.JPG",
+  "../assets/IMG_8135.JPG",
+  "../assets/IMG_8169.JPG",
+  "../assets/IMG_8722.JPG",
+  "../assets/IMG_8724.JPG",
+  "../assets/IMG_8726.JPG",
+  "../assets/IMG_8731.JPG",
+  "../assets/IMG_8006.JPG",
+  "../assets/IMG_8006.JPG"
 ];
 
 const Gallery: React.FC = () => {
