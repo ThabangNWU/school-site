@@ -1,9 +1,9 @@
 import React from "react";
-// import IMG_8007 from "../assets/IMG_8007.JPG"
+import IMG_8007 from "../assets/IMG_8007.JPG"
 
 
 const images = [
-  "./src/assets/IMG_8007.JPG",
+  IMG_8007,
   "./src/assets/IMG_8135.JPG",
   "./src/assets/IMG_8169.JPG",
   "./src/assets/IMG_8722.JPG",
