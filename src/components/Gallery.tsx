@@ -1,5 +1,5 @@
 import React from "react";
-import IMG_8007 from "../assets/IMG_8007.JPG"
+import img from "../assets/IMG_8007.JPG"
 
 //
 // const images = [
@@ -27,7 +27,7 @@ const Gallery: React.FC = () => {
 
   return (
    <div className="gallery">
-    <img src={IMG_8007} />
+    <img src={img} />
     {/* <div className="gallery__heading">
         <h1>Gallery</h1>
     </div>
