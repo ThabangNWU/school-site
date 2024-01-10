@@ -1,5 +1,4 @@
 import React from "react";
-import img from "../assets/IMG_8007.JPG"
 
 const images = [
   "../assets/IMG_8007.JPG",
