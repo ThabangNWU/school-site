@@ -1,4 +1,6 @@
 import React from "react";
+// import IMG_8007 from "../assets/IMG_8007.JPG"
+
 
 const images = [
   "./src/assets/IMG_8007.JPG",
