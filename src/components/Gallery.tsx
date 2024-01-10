@@ -1,7 +1,7 @@
 import React from "react";
 import IMG_8007 from "../assets/IMG_8007.JPG"
 
-
+//
 const images = [
   IMG_8007,
   "./src/assets/IMG_8135.JPG",
