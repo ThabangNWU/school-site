@@ -3,7 +3,7 @@ import { json } from "react-router-dom";
 
 const AboutUsPortal = () => {
   const formData = new FormData();
-  const [SelectedFile, setSelectedFile] = useState("");
+  const [SelectedFile, setSelectedFile] = useState();
   const [file, setFile] = useState();
   const [aboutustext, setaboutustext] = useState("");
   const [mission, setmission] = useState("");
@@ -125,15 +125,15 @@ const AboutUsPortal = () => {
     setSelectedImage(event.target.value);
   };
 
-  const handlefilechange = (e:any) => {
+  const handlefilechange = (e) => {
     const file = e.target.files[0];
     setFile(file);
     if (file) {
       const reader = new FileReader();
-      reader.readAsDataURL(file);
+
       reader.onload = (e) => {
-        
-        setSelectedFile(String(reader.result));
+        const dataUrl = e.target.result;
+        setSelectedFile(dataUrl);
       };
       reader.readAsDataURL(file);
     }
