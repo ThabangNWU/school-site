@@ -21,7 +21,7 @@ const Gallery: React.FC = () => {
         <h1>Gallery</h1>
     </div>
      <div className="image__grid">
-      {images.map((image) => (
+      {first8Images.map((image) => (
         <img key={image} src={image} alt="Image" />
       ))}
     </div>
