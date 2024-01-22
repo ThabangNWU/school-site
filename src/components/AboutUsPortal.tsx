@@ -142,8 +142,8 @@ const AboutUsPortal = () => {
   return (
     <div className="about">
       <p className="about__title">About us</p>
+      <h4 className="h4">Upload Images</h4> 
      <div className="UploadImg">
-      <h4 className="h4">Upload Images</h4>
        <input
         type="radio"
         name="image"
