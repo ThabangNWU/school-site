@@ -143,7 +143,9 @@ const AboutUsPortal = () => {
   return (
     <div className="about">
       <p className="about__title">About us</p>
-      <input
+      <h4 className="h4">Upload Images</h4> 
+     <div className="UploadImg">
+       <input
         type="radio"
         name="image"
         value="mission"
@@ -161,9 +163,10 @@ const AboutUsPortal = () => {
         onChange={handleImageChange}
       />
       <label>Vision</label>
-      <img src={SelectedFile} alt="stickman" />
-      <input type="file" onChange={handlefilechange} />
-      <button onClick={() => handleImage()}>Save</button>
+      <img src={SelectedFile} alt="NoImage" className="img" />
+      <input type="file" onChange={handlefilechange} className="choosefile"/>
+      <button onClick={() => handleImage()} className="savebtn">Save</button>
+      </div>
       <div className="about__content">
         <p>About us</p>
         <input
